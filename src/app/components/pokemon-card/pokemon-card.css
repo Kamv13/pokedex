@@ -1,0 +1,43 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  border-top: 6px solid;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.id {
+  color: #888;
+  font-size: 12px;
+}
+
+img {
+  width: 96px;
+  height: 96px;
+}
+
+h3 {
+  margin: 4px 0;
+  text-transform: capitalize;
+}
+
+.gen {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.abilities {
+  font-size: 12px;
+  color: #444;
+  text-transform: capitalize;
+  margin: 0;
+}

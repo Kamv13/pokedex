@@ -1,1 +1,12 @@
-<p>pokemon-card works!</p>
+<div class="card" [style.border-top-color]="cardColor()">
+  <span class="id">{{ idText() }}</span>
+  <img [src]="pokemon().image" [alt]="pokemon().name" />
+  <h3>{{ pokemon().name }}</h3>
+  <p class="gen">Gen {{ pokemon().generation }}</p>
+  <div class="types">
+    @for (type of pokemon().types; track type) {
+      <app-type-badge [type]="type" />
+    }
+  </div>
+  <p class="abilities">{{ pokemon().abilities.join(', ') }}</p>
+</div>  
