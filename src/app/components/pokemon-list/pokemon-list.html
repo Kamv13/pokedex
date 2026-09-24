@@ -1,1 +1,9 @@
-<p>pokemon-list works!</p>
+@if (loading()) {
+  <app-loading-message />
+} @else {
+  <div class="grid">
+    @for (pokemon of pokemons(); track pokemon.id) {
+      <app-pokemon-card [pokemon]="pokemon" />
+    }
+  </div>
+}
